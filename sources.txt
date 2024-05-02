@@ -1,0 +1,6 @@
+space.jpg = https://unsplash.com/photos/starry-night-sky-over-starry-night-hNQwIirOseE
+rocket.png = https://www.rawpixel.com/image/6288314/png-sticker-vintage
+sun.jpg  = https://science.nasa.gov/image-detail/amf-gsfc_20171208_archive_e001435/
+mercury.jpg = https://science.nasa.gov/image-detail/ew0108829708g4release_mercury/
+venus.jpg = https://science.nasa.gov/image-detail/venus-single/
+earth.jpg = https://explorer1.jpl.nasa.gov/galleries/earth-from-space/#gallery-10
