@@ -12,15 +12,15 @@ header{
     display: flex;
     align-items: center;
 
-    background-color: rgba(15, 15, 75, 0.856);
+    background-image: linear-gradient(rgba(15, 15, 75, 0.856), rgba(15, 15, 75, 0));
     width: 80%;
-    height: 150px;
+    height: 20vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
 }
 .rocket{
-    height: 200%;
+    height: 150%;
 }
 
 /* --------Middle-------- */
@@ -44,12 +44,12 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 
-
     padding-bottom: 40%;
     height: 0; 
     width: 40%;
     background-color: rgba(255, 255, 255, 0.15);
     overflow: hidden;
+    position: relative;
 }
 
 .traytext{
@@ -81,8 +81,9 @@ opacity: 1;
 }
 */
 .star_img{
-    width: 100%;
-    height: fit-content;
+    display: block;
+    height: 100%;
+    position: absolute;
 }
 
 .starmain{

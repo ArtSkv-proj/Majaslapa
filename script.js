@@ -1,3 +1,5 @@
+
+
 /* Ar nolūku, ka var nokopēt tekstu mājaslapā, ja nepieciešams, :hover css to neļauj*/
 
 function TrayAppear(that) {

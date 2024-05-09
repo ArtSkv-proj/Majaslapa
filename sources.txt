@@ -4,3 +4,4 @@ sun.jpg  = https://science.nasa.gov/image-detail/amf-gsfc_20171208_archive_e0014
 mercury.jpg = https://science.nasa.gov/image-detail/ew0108829708g4release_mercury/
 venus.jpg = https://science.nasa.gov/image-detail/venus-single/
 earth.jpg = https://explorer1.jpl.nasa.gov/galleries/earth-from-space/#gallery-10
+jupiter.jpg = https://upload.wikimedia.org/wikipedia/commons/8/84/Hubble_Visible_View_of_Jupiter.jpg
