@@ -1,4 +1,14 @@
-
+document.addEventListener("DOMContentLoaded", function(event){
+let thing = document.body.querySelector("main").children
+for(let i = 0; i < thing.length; i++) {
+if(thing[i].classList.contains("starmain")){
+if(thing[i].querySelector(".star .star_img").clientWidth != thing[i].querySelector(".star").clientWidth) {
+    thing[i].querySelector(".star .star_img").style.width = "100%"
+    
+};
+};
+};
+});
 
 /* Ar nolūku, ka var nokopēt tekstu mājaslapā, ja nepieciešams, :hover css to neļauj*/
 
