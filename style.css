@@ -156,17 +156,21 @@ opacity: 1;
 cursor: pointer;
 }
 
+/* Game test */
+
 .Game_Main{
     display: flex;
     justify-content: center;
     width: 100%;
-
     
-    margin-bottom: 5%;
+    
 }
 .Game_Canvas_Borders{
-    width: 100%;
-height: 1000px;
+    width: 80%;
+
+padding-top: 5%;
+padding-bottom: 5%;
+
 background-color: rgba(255, 255, 255, 0.15);
 
 display: flex;
@@ -174,12 +178,66 @@ justify-content: center;
 align-items: center;
 }
 .Game_Canvas{
-    height: 900px;
-    width: 900px;
+    width: 80%;
     background-color: white;
+    overflow: hidden;
 }
-.Game_Scene1{
+.Game_Start{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+.Game_start_Button{
+    background-color: rgba(15, 15, 75, 0.856);
+    color: white;
+    width: 15%;
+    height: 5%;
+font-size: 1vw;
+border-radius: 10%;
+}
+.Game_Land{
     width: 100%;
     height: 100%;
     display: none;
+    background-color: rgb(174, 255, 228);
+    position: relative;
+}
+.Game_Land_png{
+    height: 20%;
+    width: 100%;
+    bottom: 0%;
+    background-image: url(land.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+}
+.Game_rocket1{
+    z-index: 2;
+    position: absolute;
+    bottom:10%;
+    left: 45%;
+}
+.Game_rocket1_hitbox{
+    width: 20%;
+    height: 50%;
+    position: relative;
+}
+.Game_Rocket_Launch{
+    background-color: rgba(15, 15, 75, 0.856);
+    color: white;
+    width: 15%;
+    height: 5%;
+font-size: 1vw;
+border-radius: 10%;
+position: absolute;
+
+bottom:0%;
+left: 42.5%;
+z-index: 2;
 }

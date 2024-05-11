@@ -25,7 +25,17 @@
     <div class="Game_Main">
 <div class="Game_Canvas_Borders">
 <div class="Game_Canvas">
-    
+    <div class="Game_Start">
+        <button class="Game_start_Button" onclick="StartGame(this)">Start game</button>
+    </div>
+    <div class="Game_Land">
+       <div class="Game_rocket1" speed = "1s" active = "false" fuel = "10">
+<img src="game_rocket1.png" class="Game_rocket1_hitbox">
+       </div>
+       <button class="Game_Rocket_Launch" onclick="RocketLaunched(this)">Launch!</button>
+       <div class="Game_Land_png">
+       </div>
+    </div>
 </div>
 </div>
     </div>
