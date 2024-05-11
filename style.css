@@ -211,11 +211,13 @@ border-radius: 10%;
     height: 20%;
     width: 100%;
     bottom: 0%;
+    z-index: 1;
+    position: absolute;
+}
+.Game_Earth{
     background-image: url(land.png);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
-    position: absolute;
 }
 .Game_rocket1{
     z-index: 2;
@@ -240,4 +242,16 @@ position: absolute;
 bottom:0%;
 left: 42.5%;
 z-index: 2;
+}
+.obstacle{
+        z-index: 3;
+        position: absolute;
+        bottom:90%;
+        left: 45%;
+        transition: left 0.2s ease-in;
+}
+.obstacle_hitbox{
+    width: 10%;
+    height: 10%;
+    position: absolute;
 }

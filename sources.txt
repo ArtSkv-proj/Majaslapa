@@ -8,3 +8,5 @@ jupiter.jpg = https://upload.wikimedia.org/wikipedia/commons/8/84/Hubble_Visible
 
 game
 
+obstacle2.png =
+obstacle1.png  = https://clipart-library.com/clipart/Bald-Eagle-PNG-File.htm
