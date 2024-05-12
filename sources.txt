@@ -5,8 +5,12 @@ mercury.jpg = https://science.nasa.gov/image-detail/ew0108829708g4release_mercur
 venus.jpg = https://science.nasa.gov/image-detail/venus-single/
 earth.jpg = https://explorer1.jpl.nasa.gov/galleries/earth-from-space/#gallery-10
 jupiter.jpg = https://upload.wikimedia.org/wikipedia/commons/8/84/Hubble_Visible_View_of_Jupiter.jpg
+saturn.jpg = https://science.nasa.gov/image-detail/amf-pia11141/
+uranus.jpg = https://science.nasa.gov/image-detail/amf-pia18182/
+neptune.jpg = https://lv.wikipedia.org/wiki/Nept%C5%ABns_(plan%C4%93ta)#/media/Att%C4%93ls:Neptune_Voyager2_color_calibrated.png
+
 
 game
 
-obstacle2.png =
+obstacle2.png = https://similarpng.com/colorful-hot-air-balloon-on-transparent-png/#google_vignette
 obstacle1.png  = https://clipart-library.com/clipart/Bald-Eagle-PNG-File.htm

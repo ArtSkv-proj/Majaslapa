@@ -11,13 +11,27 @@ body{
 header{
     display: flex;
     align-items: center;
-
+row-gap: 10%;
+column-gap: 10%;
     background-image: linear-gradient(rgba(15, 15, 75, 0.856), rgba(15, 15, 75, 0));
     width: 80%;
     height: 20vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
+}
+
+.header_href{
+    background-color: rgba(255, 255, 255, 0.150);
+padding: 2% 4% 2% 4%;
+}
+.header_href_a{
+    text-decoration: none;
+    color: white;
+    font-family: "Signika Negative", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+font-size: 1.5vw;
 }
 .rocket{
     height: 150%;
@@ -156,6 +170,20 @@ opacity: 1;
 cursor: pointer;
 }
 
+/* --------Bottom-------- */
+
+footer{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient( rgba(15, 15, 75, 0),rgba(15, 15, 75, 0.856));
+    width: 80%;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
 /* Game test */
 
 .Game_Main{
@@ -223,11 +251,11 @@ border-radius: 10%;
     z-index: 2;
     position: absolute;
     bottom:10%;
-    left: 45%;
+    left: 47.5%;
 }
 .Game_rocket1_hitbox{
-    width: 20%;
-    height: 50%;
+    width: 10%;
+    height: 25%;
     position: relative;
 }
 .Game_Rocket_Launch{
@@ -243,12 +271,62 @@ bottom:0%;
 left: 42.5%;
 z-index: 2;
 }
+.Game_retry{
+    display: none;
+    background-color: rgba(15, 15, 75, 0.856);
+    color: white;
+    width: 15%;
+    height: 5%;
+font-size: 1vw;
+border-radius: 10%;
+position: absolute;
+
+bottom:0%;
+left: 42.5%;
+z-index: 2;
+}
+
+.Game_metres{
+    background-color: rgba(15, 15, 75, 0.856);
+    color: white;
+    width: 10%;
+    height: 5%;
+font-size: 1vw;
+border-radius: 10%;
+position: absolute;
+justify-content: center;
+display: flex;
+align-items: center;
+
+top:0%;
+left: 0%;
+z-index: 4;
+}
+
+.Game_cash{
+    background-color: rgba(15, 15, 75, 0.856);
+    color: white;
+    width: 10%;
+    height: 5%;
+font-size: 1vw;
+border-radius: 10%;
+position: absolute;
+justify-content: center;
+display: flex;
+align-items: center;
+
+top:0%;
+right: 0%;
+z-index: 4;
+}
+
 .obstacle{
         z-index: 3;
         position: absolute;
         bottom:90%;
         left: 45%;
-        transition: left 0.2s ease-in;
+        transition: left 0.15s ease-in;
+        transition: top 0.2s ease-in;
 }
 .obstacle_hitbox{
     width: 10%;
