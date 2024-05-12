@@ -191,13 +191,12 @@ footer{
     justify-content: center;
     width: 100%;
     
-    
 }
 .Game_Canvas_Borders{
-    width: 80%;
+    width: 70%;
 
-padding-top: 5%;
-padding-bottom: 5%;
+padding-top: 7.5%;
+padding-bottom: 7.5%;
 
 background-color: rgba(255, 255, 255, 0.15);
 
@@ -286,7 +285,7 @@ left: 42.5%;
 z-index: 2;
 }
 
-.Game_metres{
+.Game_kilometres{
     background-color: rgba(15, 15, 75, 0.856);
     color: white;
     width: 10%;
@@ -318,6 +317,133 @@ align-items: center;
 top:0%;
 right: 0%;
 z-index: 4;
+}
+
+.Game_fuel{
+
+    background-color: rgba(15, 15, 75, 0.856);
+    color: white;
+    width: 15%;
+    height: 5%;
+font-size: 1vw;
+border-radius: 10%;
+position: absolute;
+justify-content: center;
+display: flex;
+align-items: center;
+
+bottom:10%;
+left: 0%;
+z-index: 2;
+}
+.Game_fuel_text{
+
+    background-color: rgba(15, 15, 75, 0.856);
+    color: white;
+    width: 15%;
+    height: 5%;
+font-size: 1vw;
+border-radius: 10%;
+position: absolute;
+justify-content: center;
+display: flex;
+align-items: center;
+
+bottom:5%;
+left: 0%;
+z-index: 2;
+}
+
+.Game_fuel_bar{
+
+    width: 15%;
+    height: 2%;
+font-size: 1vw;
+border-radius: 10%;
+position: absolute;
+justify-content: center;
+display: flex;
+align-items: center;
+
+bottom:8%;
+right: -5%;
+z-index: 4;
+transform: rotate(-90deg);
+}
+.Game_fuel_bar::-webkit-progress-value{
+background-color: rgb(226, 226, 67);
+}
+
+.Game_fuel_price{
+
+    background-color: rgba(15, 15, 75, 0.856);
+    color: white;
+    width: 15%;
+    height: 5%;
+font-size: 1vw;
+border-radius: 10%;
+position: absolute;
+justify-content: center;
+display: flex;
+align-items: center;
+
+bottom:0%;
+left: 0%;
+z-index: 2;
+}
+
+
+.Game_speed{
+
+    background-color: rgba(15, 15, 75, 0.856);
+    color: white;
+    width: 15%;
+    height: 5%;
+font-size: 1vw;
+border-radius: 10%;
+position: absolute;
+justify-content: center;
+display: flex;
+align-items: center;
+
+bottom:10%;
+left: 15%;
+z-index: 2;
+}
+.Game_speed_text{
+
+    background-color: rgba(15, 15, 75, 0.856);
+    color: white;
+    width: 15%;
+    height: 5%;
+font-size: 1vw;
+border-radius: 10%;
+position: absolute;
+justify-content: center;
+display: flex;
+align-items: center;
+
+bottom:5%;
+left: 15%;
+z-index: 2;
+}
+
+.Game_speed_price{
+
+    background-color: rgba(15, 15, 75, 0.856);
+    color: white;
+    width: 15%;
+    height: 5%;
+font-size: 1vw;
+border-radius: 10%;
+position: absolute;
+justify-content: center;
+display: flex;
+align-items: center;
+
+bottom:0%;
+left: 15%;
+z-index: 2;
 }
 
 .obstacle{

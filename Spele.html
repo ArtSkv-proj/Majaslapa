@@ -33,7 +33,16 @@
 
 <main>
     <div class="Sistema_Main">
-<h1 class="Sistema_Heading">Test</h1>
+<h1 class="Sistema_Heading">MiniSpēle</h1>
+<!--Izdomāts scenārijs-->
+<p class="Sistema_Paragraph">
+    Šī spēle tika izveidota ar nolūku, lai uzlabotu manas javascript zināšanas. Sākumā bija plānots pievienot vēl daža raķetes (procesā uzzināju daudz jauna) un dažas planētas kuras sasniedzot varētu mainīt lokāciju, bet man pietrūka laika un vēlmes.
+</p>
+<h2 class="Sistema_Heading">Kontroles</h2>
+<p class="Sistema_Paragraph">
+    Griezties pa labi - D vai -> <br>
+    Griezties pa kreisi - A vai <-
+</p>
     </div>
     <div class="Game_Main">
 <div class="Game_Canvas_Borders">
@@ -42,12 +51,19 @@
         <button class="Game_start_Button" onclick="StartGame(this)">Startēt spēli</button>
     </div>
     <div class="Game_Land">
-       <div class="Game_rocket1" speed = "1" active = "false" fuel = "10" maxfuel = "10">
+       <div class="Game_rocket1" speed = "1" active = "false" fuel = "10" maxfuel = "10" fuel_u = "1" speed_u = "1">
 <img src="game_rocket1.png" class="Game_rocket1_hitbox">
        </div>
        <button class="Game_Rocket_Launch" onclick="RocketLaunched(this)">Aiziet!</button>
-       <button class="Game_retry" onclick="Retry(this)">Vēlreiz?</button>
-       <div class="Game_metres" metres = "0">0</div>
+       <button class="Game_retry" onclick="Retry(this)">Atkārtot?</button>
+       <button class="Game_fuel" onclick="Upgrade(this)" shop = "fuel">Uzlabot bāku</button>
+       <button class="Game_speed" onclick="Upgrade(this)" shop = "speed">Uzlabot ātrumu</button>
+       <progress value="10" max="10" class="Game_fuel_bar"></progress>
+       <div class="Game_fuel_price">200</div>
+       <div class="Game_speed_price">200</div>
+       <div class="Game_fuel_text">1</div>
+       <div class="Game_speed_text">1</div>
+       <div class="Game_kilometres" kilometres = "0">0</div>
        <div class="Game_cash" cash = "0" >0</div>
        <div class="Game_Land_png Game_Earth">
        </div>
