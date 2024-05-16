@@ -141,6 +141,53 @@ function keys(e) {
     };
 };
 
+let isTouchRight = false;
+let isTouchLeft = false;
+
+document.addEventListener('DOMContentLoaded', function() {
+
+document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_Land .Game_Right").addEventListener('mousedown', function() {
+    isTouchRight = true;
+});
+
+document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_Land .Game_Right").addEventListener('mouseup', function() {
+    isTouchRight = false;
+});
+
+
+document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_Land .Game_Left").addEventListener('mousedown', function() {
+    isTouchLeft = true;
+});
+
+document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_Land .Game_Left").addEventListener('mouseup', function() {
+    isTouchLeft = false;
+});
+})
+
+
+/* Nepaspēju salabot. Šis domāts skārienjutīgiem ekrāniem */
+function Tap(that){
+    if(document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas").getAttribute("playing") == "true") {
+        if(that.classList.contains("Game_Right")){
+            let rocket = document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_rocket" + document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas").getAttribute("currentrocket"))
+            let rotation = parseInt(rocket.parentNode.parentNode.getAttribute("rocketrotation"))
+            if(!(rotation >= 90)) {
+                rotation += 3
+                rocket.parentNode.parentNode.setAttribute("rocketrotation", rotation)
+                rocket.style.transform = "rotate(" + rotation + "deg)"
+            }
+        } else if(that.classList.contains("Game_Left")) {
+            let rocket = document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_rocket" + document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas").getAttribute("currentrocket"))
+     let rotation = parseInt(rocket.parentNode.parentNode.getAttribute("rocketrotation"))
+     if(!(rotation <= -90)) {
+     rotation -= 3
+     rocket.parentNode.parentNode.setAttribute("rocketrotation", rotation)
+     rocket.style.transform = "rotate(" + rotation + "deg)"
+     }
+        }
+     }
+}
+
 function objects(that) {
     var fuel = parseFloat(that.parentNode.querySelector(".Game_rocket1").getAttribute("fuel")).toFixed(1)
    if(document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas").getAttribute("playing") == "true") {

@@ -22,10 +22,12 @@ column-gap: 10%;
 }
 
 .header_href{
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.150);
 padding: 2% 4% 2% 4%;
 }
 .header_href_a{
+
     text-decoration: none;
     color: white;
     font-family: "Signika Negative", sans-serif;
@@ -241,6 +243,22 @@ border-radius: 10%;
     z-index: 1;
     position: absolute;
 }
+.Game_Left{
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 50%;
+    bottom: 0%;
+opacity: 1;
+}
+.Game_Right{
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 50%;
+    bottom: 0%;
+    right: 0;
+}
 .Game_Earth{
     background-image: url(land.png);
     background-repeat: no-repeat;
@@ -282,7 +300,7 @@ position: absolute;
 
 bottom:0%;
 left: 42.5%;
-z-index: 2;
+z-index: 3;
 }
 
 .Game_kilometres{
@@ -334,7 +352,7 @@ align-items: center;
 
 bottom:10%;
 left: 0%;
-z-index: 2;
+z-index: 3;
 }
 .Game_fuel_text{
 
@@ -351,7 +369,7 @@ align-items: center;
 
 bottom:5%;
 left: 0%;
-z-index: 2;
+z-index: 3;
 }
 
 .Game_fuel_bar{
@@ -389,7 +407,7 @@ align-items: center;
 
 bottom:0%;
 left: 0%;
-z-index: 2;
+z-index: 3;
 }
 
 
@@ -408,7 +426,7 @@ align-items: center;
 
 bottom:10%;
 left: 15%;
-z-index: 2;
+z-index: 3;
 }
 .Game_speed_text{
 
@@ -425,7 +443,7 @@ align-items: center;
 
 bottom:5%;
 left: 15%;
-z-index: 2;
+z-index: 3;
 }
 
 .Game_speed_price{
@@ -443,7 +461,7 @@ align-items: center;
 
 bottom:0%;
 left: 15%;
-z-index: 2;
+z-index: 3;
 }
 
 .obstacle{
@@ -476,5 +494,24 @@ opacity: 100;
 visibility: visible;
 font-size: 2.9vw;
 }
-
+.Sistema_Main{
+    font-size: 2.9vw;
+}
+.header_href_a{
+font-size: 2.9vw;
+}
+header{
+    column-gap: 5%;
+}
+.Game_Canvas_Borders{
+    width: 100%;
+    padding-top: 2.5%;
+padding-bottom: 2.5%;
+}
+.Game_Canvas{
+    width: 95%;
+}
+main{
+    width: 90%;
+}
 }
