@@ -16,6 +16,7 @@ function TrayAppear(that) {
 
     starmain = that.parentNode;
     /*const childs = starmain.children;*/
+    if(window.innerWidth > 600){
     if(that.classList.contains("star")){
         starmain.querySelector(".traytext").style.visibility ="visible";
         starmain.querySelector(".traytext").style.opacity = "1";
@@ -39,10 +40,12 @@ if(that.parentNode.querySelector(".star").getAttribute("working") === "true") {
 };
 };
 };
+};
 
 
 
 function TrayDisappear(that) {
+    if(window.innerWidth > 600){
     if(that.classList.contains("star")){
     if(that.getAttribute("working") === "false") {
         that.setAttribute("working",  "true")
@@ -74,6 +77,7 @@ function TrayDisappear(that) {
    that.style.visibility ="hidden";
     that.style.opacity = "0";
 };
+    };
 };
 
 function ListClick(that) {

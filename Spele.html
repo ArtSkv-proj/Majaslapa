@@ -14,7 +14,7 @@
     <title>Spēle_test</title>
 
 </head>
-<body>
+<body onload="Resize()">
     <header>
         <img src="rocket2.png" class="rocket">
         <div class="header_href">
@@ -48,7 +48,7 @@
 <div class="Game_Canvas_Borders">
 <div class="Game_Canvas" playing = "false" currentrocket = "1" rocketrotation = "0">
     <div class="Game_Start">
-        <button class="Game_start_Button" onclick="StartGame(this)">Startēt spēli</button>
+        <button class="Game_start_Button" onclick="StartGame(this)">Startēt</button>
     </div>
     <div class="Game_Land">
        <div class="Game_rocket1" speed = "1" active = "false" fuel = "10" maxfuel = "10" fuel_u = "1" speed_u = "1">

@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", function(event){
     The_Element.style.height = The_Element.clientWidth + "px"
 
 });
+function Resize() {
+    let The_Element = document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas")
+    The_Element.style.height = The_Element.clientWidth + "px"
+}
 window.addEventListener("resize",function(){
    let The_Element = document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas")
 The_Element.style.height = The_Element.clientWidth + "px"
@@ -79,6 +83,7 @@ function kilometres(that) {
    } else {
  kilometre = Math.abs((1/90) * rotation + 1);
    };
+
    kilometre = parseFloat(kilometre) * parseFloat(rocket.getAttribute("speed"))
    let Game_kilometres =  document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_Land .Game_kilometres")
    let Fuel_bar = document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_Land .Game_fuel_bar")
@@ -148,10 +153,12 @@ obstacle.classList.add("obstacle")
 obstacle.classList.add("obstacle_hitbox")
 that.parentNode.appendChild(obstacle)
 
-
+console.log(rocket.getBoundingClientRect());
+let logic
 let the_bool = false
 
 function collide() {
+
 var collision = !(obstacle.getBoundingClientRect().right < rocket.getBoundingClientRect().left ||
     obstacle.getBoundingClientRect().left > rocket.getBoundingClientRect().right ||
 obstacle.getBoundingClientRect().bottom < rocket.getBoundingClientRect().top ||
@@ -160,7 +167,7 @@ obstacle.getBoundingClientRect().top > rocket.getBoundingClientRect().bottom
 
 if(collision) {
     EndGame()
-
+clearTimeout(logic)
 }
 }
 
@@ -204,9 +211,16 @@ let speed = rocket.getAttribute("speed")
         
         let obstaclemovement2 = parseFloat(obstacle.style.top) || 0;
         
+   let other
+   if(rotation >= 0) {
+ other = Math.abs((-1/90) * rotation + 1);
+   } else {
+ other = Math.abs((1/90) * rotation + 1);
+   };
 
+other = other + 0.5
 
-obstacle.style.top = (obstaclemovement2 + 1) + "%"
+obstacle.style.top = (obstaclemovement2 + other) + "%"
 if(parseFloat(obstacle.style.top) > parseFloat("110%")) {
 obstacle.remove()
 };
@@ -231,7 +245,12 @@ fuelmove2()
 fuelmove()
 
 
-       setTimeout(function(){objects(that)}, 3000);
+      logic = setTimeout(function(){
+       
+            objects(that)
+            
+        
+    }, 1000);
 
     };
 }
