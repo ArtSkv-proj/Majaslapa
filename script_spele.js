@@ -148,15 +148,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_Land .Game_Right").addEventListener('mousedown', function() {
     isTouchRight = true;
+    Tap(document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_Land .Game_Right"))
 });
 
 document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_Land .Game_Right").addEventListener('mouseup', function() {
     isTouchRight = false;
+    
 });
 
 
 document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_Land .Game_Left").addEventListener('mousedown', function() {
     isTouchLeft = true;
+    Tap(document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_Land .Game_Left"))
 });
 
 document.body.querySelector("main .Game_Main .Game_Canvas_Borders .Game_Canvas .Game_Land .Game_Left").addEventListener('mouseup', function() {
@@ -183,6 +186,9 @@ function Tap(that){
      rotation -= 3
      rocket.parentNode.parentNode.setAttribute("rocketrotation", rotation)
      rocket.style.transform = "rotate(" + rotation + "deg)"
+
+
+
      }
         }
      }
